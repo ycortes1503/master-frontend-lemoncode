@@ -1,0 +1,61 @@
+@use "_colors.scss" as *;
+
+body {
+  padding: 0;
+  margin: 16px;
+  font-family: "Arial";
+}
+
+.title {
+  margin: 16px 0;
+  font: {
+    size: 1.5em;
+    weight: bold;
+  }
+}
+
+.nav-bar {
+  background-color: $teal;
+  color: $white;
+  font: {
+    size: 1em;
+    weight: bold;
+  }
+}
+
+.items-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  & > li {
+    padding: 8px 16px;
+    text-align: center;
+
+    &:hover {
+      background-color: $dark-cyan-blue;
+    }
+
+    a {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 1.2em;
+  }
+
+  .nav-bar {
+    font-size: 0.8em;
+  }
+
+  .items-container {
+    flex-direction: column;
+  }
+}
