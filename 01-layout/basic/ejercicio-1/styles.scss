@@ -1,0 +1,59 @@
+@use "_mixins.scss" as *;
+@use "_colors.scss" as *;
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.palette {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.palette-title {
+  font: {
+    family: sans-serif;
+    size: 24px;
+    weight: bold;
+  }
+
+  text-align: center;
+  color: $dark-gray;
+}
+
+div[class^="container-"] {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 8px;
+
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    border-radius: 4px;
+    width: 100px;
+    height: 60px;
+  }
+
+  .color-box-text {
+    color: $white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+  }
+}
+
+.container-1 {
+  @include build-color-palette($magenta);
+}
+
+.container-2 {
+  @include build-color-palette($blue);
+}
+
+.container-3 {
+  @include build-color-palette($cyan);
+}
