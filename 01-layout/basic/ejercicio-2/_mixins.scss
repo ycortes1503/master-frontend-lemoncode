@@ -1,0 +1,64 @@
+@use "_colors" as *;
+
+@mixin apply-theme($theme) {
+  @if ($theme == "theme-a") {
+    .base {
+      background-color: $olive;
+    }
+
+    .important {
+      background-color: $green;
+    }
+
+    .warning {
+      background-color: $lime;
+    }
+
+    .box-with-shadow {
+      background-color: $white;
+      box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.8);
+    }
+
+    .primary-font {
+      font-family: "regular", sans-serif;
+    }
+
+    .secondary-font {
+      font: {
+        family: "noto serif", serif;
+        weight: bold;
+      }
+    }
+  }
+
+  @if ($theme == "theme-b") {
+    .base {
+      background-color: $plum;
+    }
+
+    .important {
+      background-color: $violet;
+    }
+
+    .warning {
+      background-color: $pink;
+    }
+
+    .box-with-shadow {
+      background-color: $white;
+      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
+    }
+
+    .box {
+      border-radius: 4px;
+    }
+
+    .primary-font {
+      font-family: "times new roman", serif;
+    }
+
+    .secondary-font {
+      font-family: "noto serif", serif;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@use "_mixins.scss" as *;
+@use "_colors.scss" as *;
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap");
+
+:root {
+  @include apply-theme("theme-a");
+}
+
+body {
+  padding: 24px;
+}
+
+.box {
+  width: 100px;
+  height: 70px;
+  border: 1px solid $dark-gray;
+  padding: 16px;
+  box-sizing: border-box;
+  font: {
+    family: "Comic Neue", cursive;
+    weight: bold;
+  }
+}
