@@ -1,0 +1,22 @@
+@use "_colors.scss" as *;
+
+body {
+  font-size: x-large;
+  font-family: "Courier New", Courier, monospace;
+  color: $white;
+  background-color: $background-color;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: 50px;
+}

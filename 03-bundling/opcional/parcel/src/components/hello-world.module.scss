@@ -1,0 +1,14 @@
+@use "./../_colors.scss" as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  p {
+    font-size: x-large;
+    font-family: "Courier New", Courier, monospace;
+    color: $white;
+  }
+}
