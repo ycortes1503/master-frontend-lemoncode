@@ -1,0 +1,21 @@
+@use "../_colors.scss" as *;
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: $green;
+  font-size: large;
+  color: $white;
+  font-weight: 700;
+
+  &__icon {
+    padding: 0px 24px;
+  }
+
+  &__title {
+    width: 100%;
+    text-align: center;
+  }
+}

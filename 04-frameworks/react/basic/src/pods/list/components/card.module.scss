@@ -1,0 +1,27 @@
+@use "../../../colors" as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: 0.5px solid $grey;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  padding: 0px 8px 8px;
+  width: 100%;
+  box-sizing: border-box;
+}

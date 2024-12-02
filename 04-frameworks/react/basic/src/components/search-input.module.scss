@@ -1,0 +1,21 @@
+@use "../_colors.scss" as *;
+
+.container {
+  height: 25px;
+  width: 300px;
+  font-size: medium;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  border: 0.5px solid $grey;
+  padding: 8px 0px;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  &__input {
+    width: 100%;
+    border: none;
+    outline: none;
+  }
+}

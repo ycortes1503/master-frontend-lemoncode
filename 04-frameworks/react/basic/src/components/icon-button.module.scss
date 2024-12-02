@@ -1,0 +1,10 @@
+@use "../_colors.scss" as *;
+
+
+.container {
+  display: flex;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  align-items: center;
+}

@@ -1,0 +1,49 @@
+@use "./../../colors" as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  gap: 16px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px !important;
+  border-radius: 4px;
+  border: solid 1px $grey !important;
+  background-color: $light-grey;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+
+  input {
+    height: 25px;
+    border: none !important;
+    border-bottom: solid 1px $grey !important;
+  }
+
+  input:focus {
+    outline: none;
+    border: solid 1px $grey !important;
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 40px;
+  border: solid 1px $grey !important;
+  border-radius: 4px;
+}
